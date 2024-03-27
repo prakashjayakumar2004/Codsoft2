@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+
+:root {
+    --transition: 0.4s;
+    --primary_color: #435B66;
+    --secondary_color: black;
+    --transition: 0.4 ease;
+}
+
+
+body {
+    font-family: "Dosis", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 90px;
+}
+
+h1 {
+    color: #555843;
+    font-size: 80px;
+}
+
+h2 {
+    color: var(--primary_color);
+    font-size: 40px;
+}
+
+h3 {
+    color: var(--secondary_color);
+    font-size: 35px;
+}
+
+h4 {
+    color: var(--secondary_color);
+}
+
+h5 {
+    color: var(--secondary_color);
+}
+
+
+
+a {
+    font-size: larger;
+    font-weight: bold;
+    color: #124076;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #435B66;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: black;
+    box-shadow: inset;
+}
+
+nav {
+    position: sticky;
+    padding: 2.5rem 3rem;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(245, 238, 200);
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.Logo {
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    display: flex;
+    color: #643843;
+    padding: 0.5% 1% 0.5% 1%;
+    float: left;
+}
+
+.Logo:hover {
+    font-weight: bolder;
+    background-color: #ebdb81;
+    border-radius: 20%;
+    transition: 0.6s;
+    color: black;
+    text-decoration: none;
+}
+
+.Links {
+    list-style: none;
+    gap: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(232, 128, 72, 0.3);
+}
+
+.head_content {
+    padding: 8rem 5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 10%;
+    column-gap: 5px;
+}
+
+img {
+    width: 100%;
+    height: 120%;
+    border-radius: 20%;
+    border-color: #124076;
+    padding: 0rem 0rem;
+}
+
+.head_img {
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+.head_right {
+    padding: 0% 5%;
+}
+
+.head_right h2 {
+    color: #124076;
+}
+
+.head_right p {
+    font-size: 35px;
+}
+
+.resume {
+    margin: 20px 0px 0px 0px;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: 200px;
+    padding: 18px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px white;
+}
+
+.secContent {
+    padding: 10% 0%;
+    background-color: #F1FADA;
+}
+
+.sec_head {
+    padding-left: 40%;
+}
+
+.sec_content {
+    margin-top: 25px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 38% auto;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sec_left img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    padding: 0rem 0rem;
+}
+
+.sec_left {
+    padding-left: 55%;
+}
+
+.sec_right {
+    padding: 0px 0px 0px 90px;
+}
+
+.edu {
+    display: grid;
+    gap: 20px;
+}
+
+.edu_content {
+    padding: 25px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.skillContent {
+    padding: 10% 0%;
+    background-color: rgb(0, 241, 145, 0.5);
+}
+
+.skillHead {
+    padding: 0% 45% 5% 45%;
+}
+
+.skillcount {
+    padding: 0px 50px 0px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+}
+
+.skills {
+    border: 5px solid black;
+    border-radius: 30px;
+    background-color: white;
+    padding: 10% 20% 10% 20%;
+}
+
+.projSection {
+    background-color: rgba(234, 79, 131, 0.5);
+    padding: 3% 0%;
+}
+
+.projHead {
+    padding: 3% 0%;
+    text-align: center;
+}
+
+.projContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3%;
+}
+
+.project {
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.project img {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 2%;
+    width: 80%;
+    height: 60%;
+    border-radius: 30px;
+    margin: 0.4rem;
+}
+
+.project p {
+    padding: 0% 0% 9% 0%;
+}
+
+.contact {
+    background-color: rgba(79, 123, 234, 0.5);
+    padding: 3% 0%;
+}
+
+.contact .edu {
+    width: 30%;
+    margin-left: 35%;
+
+}
+
+footer {
+    background-color: rgb(66, 86, 86);
+    padding: 1%;
+    text-align: center;
+}
